@@ -1,0 +1,583 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+h1, h2, h3 p{
+  margin: 0;
+  padding: 0;
+}
+  
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1%;
+}
+  
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-items: auto;
+}
+  
+nav ul li {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+}
+  
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+}
+  
+.page_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.page_wrapper_request{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page_wrapper h2{
+  margin-top: 36px;
+  margin-left: 36px;
+  margin-bottom: 12px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.page_wrapper p{
+  margin-left: 36px;
+  margin-bottom: 36px;
+}
+
+.page_wrapper #selector_type{
+  margin-left: 36px;
+  margin-bottom: 36px;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+.page_wrapper #selector_type option{
+  padding: 10px;
+  background-color: #fff;
+}
+
+.page_wrapper #selector_type option:checked{
+  background-color: #e0e0e0;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+
+.carousel-container { 
+  position: relative; 
+  width: 25%; 
+  max-width: 800px; 
+  overflow: hidden;  
+  border-radius: 10px; 
+  background-color: #fff; 
+} 
+.carousel { 
+  display: flex; 
+  transition: transform 0.5s ease-in-out; 
+} 
+.carousel-slide {
+  min-width: 100%; 
+  box-sizing: border-box; 
+} 
+.carousel-slide img{
+  width: 100% !important;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none; 
+  color: white; 
+  font-size: 2em; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50%; 
+  user-select: none; 
+} 
+.carousel-button.prev {
+  left: 10px; 
+} 
+.carousel-button.next { 
+  right: 10px; 
+} 
+.carousel-button:focus { 
+  outline: none; 
+} 
+  /* Стили для разделов: home, contact, portfolio, blog, pricing, request */
+  .photographer-info {
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+  .photographer-info .text{
+    position: absolute;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 2%;
+    color: #fff;
+    width: 100%;
+  }
+  .photographer-info .text h1{
+    flex: 1;
+    font-size: 72px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .photographer-info .text p{
+    flex: 1;
+    font-size: 24px;
+    display: flex;
+    justify-content: center; 
+    align-items: top;
+  }
+  
+  .contact-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-media{
+    display: flex;
+    align-items: center;
+  }
+  .contact-info .icon{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .contact-info .icon.VK{
+    height: 40px;
+    width: 40px;
+    background-image: url(./img/icons/VK_icon.svg);
+  }
+  .contact-info .icon.Telegram{
+    margin-right: 5px;
+    background-image: url(./img/icons/Telegram_icon.svg);
+  }
+
+  .contact-info .icon.WA{
+    background-image: url(./img/icons/WA_icon.svg);
+  }
+
+  .contact-info h2{
+    margin: 36px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .pricing {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .request_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .request_container h2{
+    margin: 36px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .request_container #request-form{
+    width: 25vw;
+  }
+
+ div.page_wrapper section#request div.request_container form#request-form select#selector_type{
+    margin-left: 0 !important;
+    margin-bottom: 36px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  #request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #request-form label.price{
+    display: none;
+  }
+  #request-form select{
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #request-form select option{
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  #request-form select option:checked{
+    background-color: #e0e0e0;
+  }
+
+  form label {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+  }
+  
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="text"],
+  form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #request-form .agreement{
+    display: flex;
+  }
+
+  form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  form button {
+    padding: 16px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer.price{ 
+    width: 100%;
+    height: auto;
+  }
+  /* Стили для раздела Портфолио */
+.portfolio-gallery {  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.portfolio-gallery img {
+  width: 25%; 
+  height: auto; 
+  border-radius: 2%;
+  object-fit: cover; 
+}
+.portfolio-gallery img:hover {
+  width: 25%; 
+  height: auto; 
+  border-radius: 2%;
+  object-fit: cover; 
+}
+
+/* Стили для раздела Блог */
+
+.blog_container{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column; 
+}
+.blog_container h2{
+  font-size: 36px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.post_container{
+  padding-left: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.post_container .post {
+  
+  padding: 0.5%;
+  width: 20%;
+  height: 25vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+.post_container .post h3{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 24px;
+}
+.post_container .post p{
+  max-height: 150px;
+  display: flex;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.post_container .post .read-more {
+  height: 20%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_container .post .read-more:hover {
+  background-color: #555;
+}
+
+
+.post_container_index{
+  padding-left: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post_container_index .post {
+  
+  padding: 0.5%;
+  width: 20%;
+  height: 25vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+.post_container_index .post h3{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 24px;
+}
+.post_container_index .post p{
+  max-height: 150px;
+  display: flex;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.post_container_index .post .read-more {
+  height: 20%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_container_index .post .read-more:hover {
+  background-color: #555;
+}
+
+/* Стили для таблицы прайс-листа */
+
+.pricing_container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing_container h2{
+  margin: 36px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.pricing-table {
+  flex:1;
+  width: 25vw;
+  border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.pricing-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Дополнительные стили для формы заявки */
+form button[type="submit"] {
+  background-color: #ff7f50;
+  color: #fff;
+  font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+  background-color: #ff6347;
+}
+
+/* Дополнительные стили для блока отзывов от клиентов */
+
+#client-reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.client-reviews {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .client-reviews h2{
+    margin: 36px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .reviews_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .review {
+    margin: 20px;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .review-content h3 {
+    margin-top: 0;
+  }
+  
+  .review-content p {
+    margin-bottom: 0;
+  }
+
+  
+  /* Медиазапросы для адаптивности */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav ul li {
+      margin-right: 10px;
+    }
+  
+    .photographer-info,
+    .contact-info,
+    .portfolio,
+    .blog,
+    .pricing,
+    #request {
+      padding: 30px 10px;
+    }
+  }
+  

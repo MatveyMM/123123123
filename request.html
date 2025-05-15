@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотограф Иванов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page_wrapper_request">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./portfolio.html">Портфолио</a></li>
+          <li><a href="./blog.html">Блог</a></li>
+          <li><a href="./pricing.html">Прайс-лист</a></li>
+          <li><a href="./contact.html">Контакты</a></li>
+          <li><a href="./request.html">Оставить заявку</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="request">
+      <div class="request_container">
+        <h2>Оставить заявку</h2>
+        <form id="request-form">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Ваш телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Тип съемки:</label>
+            <select id="selector_type">
+              <option value="" disabled selected hidden>Выбрать тип съемки</option>
+              <option value="portrait">Портретная</option>
+              <option value="family">Семейная</option>
+              <option value="animal">С животными</option>
+              <option value="wedding">Свадебная</option>
+            </select>  
+            <label class="price">Примерная стоимость съёмки = </label>
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment"></textarea>
+            <div class="agreement">
+              <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Согласен на обработку персональных данных</label>
+            </div>
+            <button id="submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>  
+    <script src="./script.js"></script>
+    <footer class="price">
+      <p>&copy; 2024 Иван Иванов</p>
+    </footer>
+  </div>
+</body>
+</html>

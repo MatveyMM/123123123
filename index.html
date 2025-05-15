@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотограф Иванов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./portfolio.html">Портфолио</a></li>
+        <li><a href="./blog.html">Блог</a></li>
+        <li><a href="./pricing.html">Прайс-лист</a></li>
+        <li><a href="./contact.html">Контакты</a></li>
+        <li><a href="./request.html">Оставить заявку</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+      <!-- Главная -->
+      <section id="home">
+        <div class="photographer-info">
+          <div class = "text">
+            <h1>Иван Иванов</h1>
+            <p>Профессиональный фотограф, делаю лучшие кадры</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Портфолио -->
+      <section id="portfolio">
+        <div class="portfolio-gallery">
+          <img src="./img/portfolio/image1.jpg" alt="Пример работы 1">
+          <img src="./img/portfolio/image2.jpg" alt="Пример работы 2">
+          <img src="./img/portfolio/image3.jpg" alt="Пример работы 3">
+          <img src="./img/portfolio/image4.jpg" alt="Пример работы 4">
+          <!-- Добавьте больше изображений по аналогии -->
+          <div class="carousel-container"> 
+            <div class="carousel"> 
+              <div class="carousel-slide"> 
+                <img src="./img/portfolio/image1.jpg" alt="Photo 1"> 
+              </div> 
+              <div class="carousel-slide"> 
+                <img src="./img/portfolio/image2.jpg" alt="Photo 2"> 
+              </div> 
+              <div class="carousel-slide">
+                <img src="./img/portfolio/image3.jpg" alt="Photo 3"> 
+              </div> 
+              <!-- Добавьте больше слайдов по необходимости --> 
+            </div> 
+            <button class="carousel-button prev">&#10094;</button> 
+            <button class="carousel-button next">&#10095;</button> 
+          </div>
+        </div>  
+      </section>
+      
+
+      <!-- Блог -->
+      <section id="blog">
+        <div class="blog_container">
+          <h2>Блог</h2>
+          <div class = "post_container_index">
+            <div class="post">
+                <h3>Как снимать свадьбы</h3>
+                <p>В поисках совершенных кадров: секреты и техники профессиональной съемки свадебных моментов! В нашей свежей статье мы поделимся проверенными методами, которые помогут вам создать волшебные и запоминающиеся фотографии на свадьбе.</p>
+                <a href="#" class="read-more">Читать статью</a>
+            </div>
+            <div class="post">
+                <h3>Искусство портрета</h3>
+                <p>Давайте погрузимся в мир искусства портретной фотографии. Я расскажу о том, каким образом зафиксировать не только внешнюю красоту, но и внутренний мир человека. Я поделюсь с вами техниками и советами по созданию портретов, которые заставят зрителя почувствовать эмоции героев вашей фотографии.</p>
+                <a href="#" class="read-more">Читать статью</a>
+            </div>
+          </div>
+        </div> 
+      </section>
+      
+
+      <!-- Отзывы -->
+      <section id="client-reviews">
+      <div class="client-reviews">
+        <h2>Отзывы клиентов</h2>
+        <div class="reviews_container">
+          <div class="review">
+            <img src="./img/clients/client1.jpg" alt="Изображение клиента">
+            <div class="review-content">
+                <h3>Иван Петров</h3>
+                <p>«Отличный профессионал! Очень доволен результатом съемки. Рекомендую!»</p>
+            </div>
+          </div>
+          <div class="review">
+              <img src="./img/clients/client2.jpg" alt="Изображение клиента">
+              <div class="review-content">
+                  <h3>Анна Иванова</h3>
+                  <p>«Спасибо за прекрасные фотографии! Буду обращаться еще не раз.»</p>
+              </div>
+          </div>
+          <div class="review">
+            <img src="./img/clients/client3.jpg" alt="Изображение клиента">
+            <div class="review-content">
+                <h3>Петр Иванов</h3>
+                <p>«Хороший фотограф. Заказывали съемку на свадьбу — всё понравилось. Рекомендуем!»</p>
+            </div>
+          </div>
+          <div class="review">
+            <img src="./img/clients/client4.jpg" alt="Изображение клиента">
+            <div class="review-content">
+                <h3>Ева</h3>
+                <p>«Семейная фотосессия — отличный способ сплотить семью. Иван отличный фотограф!»</p>
+            </div>
+        </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Прайс-лист -->
+      <section id="pricing">
+        <div class="pricing_container">
+          <h2>Прайс-лист</h2>
+          <table class="pricing-table">
+              <thead>
+                  <tr>
+                  <th>Вид съемки</th>
+                  <th>Цена</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                  <td>Свадебная фотосъемка</td>
+                  <td>от 50 000 руб.</td>
+                  </tr>
+                  <tr>
+                  <td>Портретная фотосъемка</td>
+                  <td>от 5 000 руб.</td>
+                  </tr>
+                  <!-- Добавьте больше строк с видами съемки и их ценами -->
+              </tbody>
+          </table>  
+        </div>
+          
+      </section>
+
+      <!-- Контакты -->
+      <section id="contact">
+        <div class="contact-info">
+          <h2>Контактная информация</h2>
+          <p>Телефон: +7 (123) 456-7890</p>
+          <p>Эл. почта: info@example.com</p>
+          <p>Часы работы: Пн-Пт 9:00-18:00</p>
+          <div class="social-media">
+            <div class="icon VK"></div>
+            <div class="icon Telegram"></div>
+            <div class="icon WA"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Оставить заявку -->
+      <section id="request">
+        <div class="request_container">
+          <h2>Оставить заявку</h2>
+          <form id="request-form">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="phone">Ваш телефон:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="comment">Комментарий:</label>
+              <textarea id="comment" name="comment"></textarea>
+              <div class="agreement">
+                <input type="checkbox" id="agree" name="agree" required>
+              <label for="agree">Согласен на обработку персональных данных</label>
+              </div>
+              <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>  
+  </div>
+    
+
+  <footer>
+    <p>&copy; 2024 Иван Иванов</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
